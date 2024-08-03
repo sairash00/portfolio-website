@@ -16,40 +16,34 @@ const About = () => {
   const links = useRef(null);
 
   useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: mainbody.current,
-        start: "top 100%",
-        scrub:1,
-        end: "bottom 90%",
-      }
-    });
+    const mq = window.matchMedia("(min-width: 800px)");
 
-    tl.from(mainbody.current, {
-      stagger: 0.3
-    })
+    if (mq.matches) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: mainbody.current,
+          start: "top 100%",
+          scrub: 1,
+          end: "bottom 90%",
+        }
+      });
 
-    // .from([abouthead.current, skillhead.current, linkhead.current], {
-    //   opacity: 0,
-    //   y:50,
-    //   ease: "easeIn",
-    //   duration:0.4,
-    //   stagger: 0.1,
-    // }, "<")
-    
-    .from([about.current,skill.current, links.current],{
-      x:200,
-      opacity:0,
-      ease: "back",
-      duration:0.4,
-      stagger: 0.2,
-      scrub:1
-    })
-
+      tl.from(mainbody.current, {
+        stagger: 0.3
+      })
+      .from([about.current, skill.current, links.current], {
+        x: -50,
+        opacity: 0,
+        ease: "back",
+        duration: 0.4,
+        stagger: 0.2,
+        scrub: 1
+      });
+    }
   }, []);
 
   return (
-    <div ref={mainbody} id="about" className="w-screen text-[#202020] max-400:gap-8 max-400:px-[1rem] max-590:px-[2rem] flex flex-col gap-12 h-fit bg-[#e4e3e3] px-[4rem] py-[3rem]">
+    <div ref={mainbody} id="about" className="w-screen overflow-x-hidden text-[#202020] max-400:gap-8 max-400:px-[1rem] max-590:px-[2rem] flex flex-col gap-12 h-fit bg-[#e4e3e3] px-[4rem] py-[3rem]">
       <div>
         <h1 ref={abouthead} className="text-sm font-semibold font-[quicksand] tracking-wide underline underline-offset-4">About Me</h1>
         <p ref={about} className="mt-[1rem] max-320:tracking-tight text-justify font-[quicksand] text-lg tracking-wider font-[500]">

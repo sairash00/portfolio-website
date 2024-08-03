@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 body{
-    overflow-x:hidden
+    overflow-x:hidden;
+    /* outline: 1px solid black ; */
+}
+@media screen and (max-width:900px) {
+    body{
+        overflow-x: hidden;
+    }
 }
 body::-webkit-scrollbar{
     width: 3px;
@@ -19,4 +25,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
+*{
+    font-family: 'quicksand', 'arial';
+}

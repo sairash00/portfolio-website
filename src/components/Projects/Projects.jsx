@@ -7,67 +7,86 @@ import { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
-
     const mainContainer = useRef(null);
     const topBigText = useRef(null);
     const topPara = useRef(null);
+    const bottomPara = useRef(null);
 
     useGSAP(() => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: mainContainer.current,
-                start: "top 100%",
-                scrub:1,
-                end: "bottom 80%",
-            }
-        });
-        tl.from(mainContainer.current,{
-            stagger:0.1
-        })
-        .from([topBigText.current],{
-            opacity: 0,
-            // scale:0,
-            x: -400,
-            duration: 0.6,
-            ease: "back",
-            stagger:0.1
-        })
-        .from([topPara.current],{
-            opacity: 0,
-            // scale:0,
-            x: 400,
-            duration: 0.6,
-            ease: "back",
-        })
-     
+        const mq = window.matchMedia("(min-width: 800px)");
 
-    }, );
+        if (mq.matches) {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: mainContainer.current,
+                    start: "top 100%",
+                    scrub: 1,
+                    end: "bottom 80%",
+                }
+            });
+            tl.from(mainContainer.current, {
+                stagger: 0.1
+            })
+            .from([topBigText.current], {
+                opacity: 0,
+                x: -400,
+                duration: 0.6,
+                ease: "back",
+                stagger: 0.1
+            })
+            .from([topPara.current], {
+                opacity: 0,
+                x: 400,
+                duration: 0.6,
+                ease: "back",
+            });
+
+            const tl2 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: bottomPara.current,
+                    start: 'top 80%',
+                    end: 'bottom 80%',
+                    scrub: 1,
+                }
+            });
+            tl2.from(bottomPara.current, {
+                opacity: 0,
+                y: -100,
+                ease: "back",
+                duration: 0.1
+            });
+        }
+    }, []);
 
     const projects = [
         {
             name: "Blogging Website",
             description: "A dynamic and user-friendly blogging platform built with React and Node.js. This project features user authentication, CRUD operations for posts and other functionality, and seamless integration with Cloudinary for image uploads. It showcases my skills in full-stack development and creating scalable web applications.",
-            src: "/portfolioCharacterSmall.jpg",
-            uin:"blog"
+            src: "/Blogging.jpg",
+            uin: "blog",
+            github: "https://github.com/sairash00/Blogging-website"
         },
         {
             name: "Ecommerce Website",
             description: "A comprehensive e-commerce platform developed using React and Node.js. This project includes features such as user authentication, product listings, shopping cart functionality and order management. It highlights my ability to create secure, efficient, and user-centric web applications.",
-            src:"/portfolioCharacterSmall.jpg",
-            uin: "ecommerce"
+            src: "/ecommerce.jpg",
+            uin: "ecommerce",
+            github: "https://github.com/sairash00/"
         },
         {
-            name:"Expense Tracking App",
+            name: "Expense Tracking App",
             description: "A responsive and intuitive expense tracking application built with React and Node.js. This app features user authentication, allowing users to securely log in and manage their finances. Users can perform CRUD operations on income and expenses, calculate total expenses and income, and determine their savings. It demonstrates my proficiency in developing functional and user-friendly web applications.",
-            src: "/portfolioCharacterSmall.jpg",
-            uin: "expense"
+            src: "/expense.jpg",
+            uin: "expense",
+            github: "https://github.com/sairash00/Expense-Tracker-App"
         },
-        {
-            name:"Weather Application",
-            description: "A sleek and user-friendly weather application built with React. This app fetches real-time weather data from a third-party API, allowing users to search for and view current weather conditions and forecasts for different locations. It showcases my ability to integrate APIs and create responsive, interactive user interfaces.",
-            src: "/portfolioCharacterSmall.jpg",
-            uin: "weather"
-        }
+        // {
+        //     name: "Weather Application",
+        //     description: "A sleek and user-friendly weather application built with React. This app fetches real-time weather data from a third-party API, allowing users to search for and view current weather conditions and forecasts for different locations. It showcases my ability to integrate APIs and create responsive, interactive user interfaces.",
+        //     src: "/weather.jpg",
+        //     uin: "weather",
+        //     github: "https://github.com/sairash00/weather-app"
+        // }
     ];
 
     return (
@@ -88,7 +107,7 @@ const Projects = () => {
                         <ProjectCard key={id} project={project} />
                     ))
                 }
-                <p className="font-[quicksand] tracking-wide text-justify font-light text-sm">
+                <p ref={bottomPara} className="font-[quicksand] tracking-wide text-justify font-light text-sm">
                     Working on these projects has been a fantastic journey of growth and learning. Each project came with its own set of challenges, pushing me to think creatively and improve my technical skills. From building full-stack applications to integrating APIs and handling user authentication, I've learned a lot and enjoyed every moment of it. These experiences have not only made me a better developer but also fueled my passion for web development. I'm excited to keep learning, tackling new challenges, and building even more amazing applications in the future.
                 </p>
             </div>
