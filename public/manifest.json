@@ -1,0 +1,21 @@
+{
+    "name": "Sairash's Portfolio",
+    "short_name": "Sairash",
+    "icons": [
+      {
+        "src": "icons/icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icons/icon2.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }
+  
