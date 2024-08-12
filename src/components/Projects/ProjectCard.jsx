@@ -21,18 +21,18 @@ const ProjectCard = ({ project }) => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: maindiv.current,
-          start: "top 120%",
+          start: "top 105%",
           end: 'bottom 95%',
         }
       });
       tl.from(maindiv.current, {
-        stagger: 0.2
+        stagger: 0.1
       })
       .from([name.current, desc.current, button.current], {
         x: -500,
         opacity: 0,
         ease: "back",
-        stagger: 0.2
+        stagger: 0.1
       })
       .from(img.current, {
         x: 200,

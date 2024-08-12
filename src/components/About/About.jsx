@@ -1,4 +1,5 @@
-import { FaLinkedin, FaGithub, FaTelegram, FaInstagram } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaTelegram, FaInstagram, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa6";
+import { SiTypescript, SiJavascript, SiExpress, SiMongodb, SiTailwindcss, SiCloudinary } from "react-icons/si";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useGSAP } from "@gsap/react";
@@ -14,6 +15,7 @@ const About = () => {
   const about = useRef(null);
   const skill = useRef(null);
   const links = useRef(null);
+  const icons = useRef(null)
 
   useGSAP(() => {
     const mq = window.matchMedia("(min-width: 800px)");
@@ -22,7 +24,7 @@ const About = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: mainbody.current,
-          start: "top 100%",
+          start: "top 90%",
           scrub: 1,
           end: "bottom 90%",
         }
@@ -31,7 +33,7 @@ const About = () => {
       tl.from(mainbody.current, {
         stagger: 0.3
       })
-      .from([about.current, skill.current, links.current], {
+      .from([about.current,icons.current, skill.current, links.current], {
         x: -50,
         opacity: 0,
         ease: "back",
@@ -52,8 +54,23 @@ const About = () => {
       </div>
       <div>
         <h1 ref={skillhead} className="text-sm font-semibold font-[quicksand] tracking-wide underline underline-offset-4">Skills and Technologies I Use</h1>
-        <p ref={skill} className="mt-[1rem] max-320:tracking-tight text-justify text-lg font-[quicksand] tracking-wider font-[500]">
-          I am proficient in various tools and technologies, including <b>HTML, CSS, JavaScript, TypeScript, React, Node.js, Express,</b> and <b>MongoDB</b>. I utilize <b>Git</b> and <b>GitHub</b> for version control and have a knack for styling and animations with <b>Tailwind CSS</b> and <b>Framer Motion</b>. I can effectively manage media with <b>Cloudinary</b> and <b>integrate diverse APIs</b> to enhance functionality. Crafting different types of RESTful APIs to support various features and functionalities is a core strength of mine. <b>Committed to continuous learning</b>, I stay updated with the latest trends and technologies to ensure I deliver innovative and efficient solutions.
+        <div ref={icons} className="flex justify-between gap-4 max-400:gap-2 max-590:mt-[0.5rem] mt-[1.5rem] text-4xl">
+          <FaHtml5 className="text-[#E34F26]  hover:scale-[1.2] transition-all " />
+          <FaCss3Alt className="text-[#1572B6]  hover:scale-[1.2] transition-all  " />
+          <SiJavascript className="text-[#ddc405] hover:scale-[1.2] transition-all " />
+          <SiTypescript className="text-[#3178C6] hover:scale-[1.2] transition-all " />
+          <FaReact className="text-[#61DAFB]   hover:scale-[1.2] transition-all " />
+          <FaNodeJs className="text-[#339933]   hover:scale-[1.2] transition-all " />
+          <SiExpress className="text-[#000000]   hover:scale-[1.2] transition-all " />
+          <SiMongodb className="text-[#47A248]   hover:scale-[1.2] transition-all " />
+          <FaGitAlt className="text-[#F05032]   hover:scale-[1.2] transition-all " />
+          <FaGithub className="text-[#181717]   hover:scale-[1.2] transition-all " />
+          <SiTailwindcss className="text-[#06B6D4]   hover:scale-[1.2] transition-all " />
+          {/* <SiGsap className="text-[#88CE02]" /> */}
+          <SiCloudinary className="text-[#232F3E]   hover:scale-[1.2] transition-all " />
+        </div>
+        <p ref={skill} className="mt-[1.5rem] max-590:mt-[0.5rem] max-320:tracking-tight text-justify text-lg font-[quicksand] tracking-wider font-[500]">
+          I am proficient in various tools and technologies, including <b className="" >HTML, CSS, JavaScript, TypeScript, React, Node.js, Express,</b> and <b className="" >MongoDB</b>. I utilize <b className="" >Git</b> and <b className="" >GitHub</b> for version control and have a knack for styling and animations with <b className="" >Tailwind CSS</b> and <b className="" >GSAP</b>. I can effectively manage media with <b className="" >Cloudinary</b> and <b className="" >integrate diverse APIs</b> to enhance functionality. Crafting different types of RESTful APIs to support various features and functionalities is a core strength of mine. <b className="" >Committed to continuous learning</b>, I stay updated with the latest trends and technologies to ensure I deliver innovative and efficient solutions.
         </p>
       </div>
       <div className="flex flex-col gap-[1rem]">
