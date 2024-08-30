@@ -64,6 +64,7 @@ const Projects = () => {
             description: "A dynamic and user-friendly blogging platform built with React and Node.js. This project features user authentication, CRUD operations for posts and other functionality, and seamless integration with Cloudinary for image uploads. It showcases my skills in full-stack development and creating scalable web applications.",
             src: "/Blogging.jpg",
             uin: "blog",
+            liveLink: null,
             github: "https://github.com/sairash00/Blogging-website"
         },
         {
@@ -71,14 +72,16 @@ const Projects = () => {
             description: "A comprehensive e-commerce platform developed using React and Node.js. This project includes features such as user authentication, product listings, shopping cart functionality and order management. It highlights my ability to create secure, efficient, and user-centric web applications.",
             src: "/ecommerce.jpg",
             uin: "ecommerce",
+            liveLink: "https://ecommerce-frontend-sigma-nine.vercel.app" ,
             github: "https://github.com/sairash00/"
         },
         {
-            name: "Expense Tracking App",
-            description: "A responsive and intuitive expense tracking application built with React and Node.js. This app features user authentication, allowing users to securely log in and manage their finances. Users can perform CRUD operations on income and expenses, calculate total expenses and income, and determine their savings. It demonstrates my proficiency in developing functional and user-friendly web applications.",
-            src: "/expense.jpg",
-            uin: "expense",
-            github: "https://github.com/sairash00/Expense-Tracker-App"
+            name: "Restaurant Food Delivery App",
+            description: "The Food Delivery & Restaurant Management App, built on the MERN stack, leverages TypeScript and React to deliver a robust and scalable solution for restaurant management and food delivery. Tailwind CSS and Daisy UI provide a sleek, responsive design, while Cloudinary handles image optimization. The app features a comprehensive admin panel, secure authentication, and seamless order management. Deployed on Vercel, it ensures high performance and reliability, making it an ideal choice for modern restaurant operations.",
+            src: "/foodApp.png",
+            liveLink: "https://food-delivery-app-frontend-teal.vercel.app" ,
+            uin: "food",
+            github: "https://github.com/sairash00/foodDeliveryApp"
         },
         // {
         //     name: "Weather Application",

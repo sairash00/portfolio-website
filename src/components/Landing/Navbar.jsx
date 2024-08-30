@@ -35,13 +35,13 @@ const Navbar = () => {
       </div>
       <div ref={links} className="text-[#e4e3e3] flex gap-10 max-740:gap-6 max-590:gap-3">
         <button
-          className="text-sm max-590:text-[0.8rem] hover:text-gray-400 transition-all"
+          className="text-sm max-590:text-[0.8rem] max-590:font-semibold hover:text-gray-400 transition-all"
           onClick={() => handleScroll("contact")}
         >
           Contact Me
         </button>
         <button
-          className="text-sm max-590:text-[0.8rem] hover:text-gray-400 transition-all"
+          className="text-sm max-590:text-[0.8rem] max-590:font-semibold hover:text-gray-400 transition-all"
           onClick={() => handleScroll("projects")}
         >
           Projects

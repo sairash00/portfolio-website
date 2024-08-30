@@ -55,13 +55,23 @@ const ProjectCard = ({ project }) => {
               {project?.description}
             </p>
           </div>
-          <div ref={button} className="text-sm flex items-center tracking-wide gap-3 font-semibold font-[quicksand] text-[#e4e3e3]">
+          <div className="flex gap-10 items-center " >
+            <div ref={button} className="text-sm flex items-center tracking-wide gap-3 font-semibold font-[quicksand] text-[#e4e3e3]">
             Github
             <a target="_blank" href= {project?.github} >
               <div  className="w-10 transition-all hover:scale-90 hover:bg-[#e4e3e3] hover:text-[#202020] flex items-center justify-center h-10 border rounded-full">
                 <RxArrowTopRight className="text-xl" />
               </div>
             </a>
+            </div>
+            { project?.liveLink ? <div ref={button} className="text-sm flex items-center tracking-wide gap-3 font-semibold font-[quicksand] text-[#e4e3e3]">
+            Live Demo
+            <a target="_blank" href= {project?.liveLink ? project.liveLink : null } >
+              <div  className="w-10 transition-all hover:scale-90 hover:bg-[#e4e3e3] hover:text-[#202020] flex items-center justify-center h-10 border rounded-full">
+                <RxArrowTopRight className="text-xl" />
+              </div>
+            </a>
+            </div> : <></> }
           </div>
         </div>
         <div ref={img} className="w-[50%] max-910:w-full flex justify-center">
