@@ -64,7 +64,7 @@ const Projects = () => {
             description: "A dynamic and user-friendly blogging platform built with React and Node.js. This project features user authentication, CRUD operations for posts and other functionality, and seamless integration with Cloudinary for image uploads. It showcases my skills in full-stack development and creating scalable web applications.",
             src: "/Blogging.jpg",
             uin: "blog",
-            liveLink: null,
+            liveLink: "https://blogging-website-frontend-swart.vercel.app/feeds/all",
             github: "https://github.com/sairash00/Blogging-website"
         },
         {
