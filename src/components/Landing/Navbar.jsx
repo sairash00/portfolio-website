@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center font-[quicksand] pt-[2rem] max-590:pt-[1.5rem] max-400:pt-[1rem]">
-      <div ref={logo} className="text-[#e4e3e3] font-bold text-2xl max-740:text-xl max-400:text-lg max-320:text-[1rem] tracking-wide">
+      <div ref={logo} className="text-[#e4e3e3] font-bold text-2xl max-740:text-xl max-400:text-[1.3rem] max-320:text-[1.1rem] tracking-wide">
         SAIRASH <br /> PORTFOLIO
       </div>
       <div ref={links} className="text-[#e4e3e3] flex gap-10 max-740:gap-6 max-590:gap-3">
