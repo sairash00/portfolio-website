@@ -76,7 +76,7 @@ const Projects = () => {
             github: "https://github.com/sairash00/"
         },
         {
-            name: "Restaurant Food Delivery App",
+            name: "Food Delivery App",
             description: "The Food Delivery & Restaurant Management App, built on the MERN stack, leverages TypeScript and React to deliver a robust and scalable solution for restaurant management and food delivery. Tailwind CSS and Daisy UI provide a sleek, responsive design, while Cloudinary handles image optimization. The app features a comprehensive admin panel, secure authentication, and seamless order management. Deployed on Vercel, it ensures high performance and reliability, making it an ideal choice for modern restaurant operations.",
             src: "/foodApp.png",
             liveLink: "https://food-delivery-app-frontend-teal.vercel.app" ,
