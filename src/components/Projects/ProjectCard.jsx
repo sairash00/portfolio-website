@@ -23,6 +23,7 @@ const ProjectCard = ({ project }) => {
           trigger: maindiv.current,
           start: "top 105%",
           end: 'bottom 95%',
+          scrub:1
         }
       });
       tl.from(maindiv.current, {
