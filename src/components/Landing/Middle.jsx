@@ -46,12 +46,12 @@ const Middle = () => {
   return (
     <div className=" w-full flex bg-[#2020200a] items-end justify-between ">
       <div className=" flex flex-col gap-4 ">
-        <h1 ref={BigText} className="text-6xl max-590:text-[2.8rem] text-[#e4e3e3] max-320:text-[2rem] font-[ubuntu] font-[900] ">
+        <h1 ref={BigText} className="text-6xl max-590:text-5xl text-[#e4e3e3] max-320:text-4xl font-[ubuntu] font-[900] ">
           FULL-STACK <br />
           WEBSITE DEVELOPER
         </h1>
         <a href="/Download/Resume.pdf" download={"Resume-Sairash_Khatiwada.pdf"} >
-          <button ref={button} className=" w-fit font-[400] hover:text-[#202020] hover:bg-[#e4e3e3] transition-all px-5 rounded py-1 text-[#e4e3e3] text-sm border  border-[#aeaaaa] ">
+          <button ref={button} className=" max-740:bg-[#e4e3e3] max-740:text-[#202020] max-740:hover:bg-[#e4e3e3c8] w-fit font-[500] hover:text-[#202020] hover:bg-[#e4e3e3] transition-all px-5 rounded py-1 text-[#e4e3e3] text-sm border  border-[#aeaaaa] ">
             Resume
           </button>
         </a>
