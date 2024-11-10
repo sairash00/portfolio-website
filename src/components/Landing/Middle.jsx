@@ -50,7 +50,7 @@ const Middle = () => {
           FULL-STACK <br />
           WEBSITE DEVELOPER
         </h1>
-        <a href="/Download/Resume.pdf" download={"Resume-Sairash_Khatiwada.pdf"} >
+        <a href="/Download/ResumeSairash.pdf" download={"ResumeSairash.pdf"} >
           <button ref={button} className=" max-740:bg-[#e4e3e3] max-740:text-[#202020] max-740:hover:bg-[#e4e3e3c8] w-fit font-[500] hover:text-[#202020] hover:bg-[#e4e3e3] transition-all px-5 rounded py-1 text-[#e4e3e3] text-sm border  border-[#aeaaaa] ">
             Resume
           </button>

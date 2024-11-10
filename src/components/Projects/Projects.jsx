@@ -60,6 +60,22 @@ const Projects = () => {
 
     const projects = [
         {
+            name: "Gossip, Chat Application",
+            description: "This project is a real-time chat application built on the MERN stack with TypeScript and React, providing a seamless messaging experience. It utilizes TanStack Query for efficient data fetching, Socket.IO for real-time communication, and Tailwind CSS for responsive design. Users can chat with anyone on the platform, with features like OTP-based email authentication, secure chat saving, and deletion options. Images are managed through Cloudinary for optimized storage and retrieval. The application ensures real-time message updates, creating a dynamic and interactive chat environment.",
+            src: "/gossip.png",
+            liveLink: "https://gossip-nine.vercel.app/login" ,
+            uin: "food",
+            github: "https://github.com/sairash00/Chat-Application"
+        },
+        {
+            name: "Food Delivery App",
+            description: "The Food Delivery & Restaurant Management App, built on the MERN stack, leverages TypeScript and React to deliver a robust and scalable solution for restaurant management and food delivery. Tailwind CSS and Daisy UI provide a sleek, responsive design, while Cloudinary handles image optimization. The app features a comprehensive admin panel, secure authentication, and seamless order management. Deployed on Vercel, it ensures high performance and reliability, making it an ideal choice for modern restaurant operations.",
+            src: "/foodApp.png",
+            liveLink: "https://food-delivery-app-frontend-teal.vercel.app" ,
+            uin: "food",
+            github: "https://github.com/sairash00/foodDeliveryApp"
+        },
+        {
             name: "Blogging Website",
             description: "A dynamic and user-friendly blogging platform built with React and Node.js. This project features user authentication, CRUD operations for posts and other functionality, and seamless integration with Cloudinary for image uploads. It showcases my skills in full-stack development and creating scalable web applications.",
             src: "/Blogging.jpg",
@@ -74,14 +90,6 @@ const Projects = () => {
             uin: "ecommerce",
             liveLink: "https://ecommerce-frontend-sigma-nine.vercel.app" ,
             github: "https://github.com/sairash00/"
-        },
-        {
-            name: "Food Delivery App",
-            description: "The Food Delivery & Restaurant Management App, built on the MERN stack, leverages TypeScript and React to deliver a robust and scalable solution for restaurant management and food delivery. Tailwind CSS and Daisy UI provide a sleek, responsive design, while Cloudinary handles image optimization. The app features a comprehensive admin panel, secure authentication, and seamless order management. Deployed on Vercel, it ensures high performance and reliability, making it an ideal choice for modern restaurant operations.",
-            src: "/foodApp.png",
-            liveLink: "https://food-delivery-app-frontend-teal.vercel.app" ,
-            uin: "food",
-            github: "https://github.com/sairash00/foodDeliveryApp"
         },
         // {
         //     name: "Weather Application",
