@@ -70,7 +70,7 @@ const Projects = () => {
           {
             name: "Auction Marketplace",
             description: "This project is a full-stack Auction Marketplace built with the MERN stack, featuring secure user authentication, product listings, and a dynamic bidding system. Users can sell products at fixed prices or create timed auctions where buyers compete through real-time bidding. The platform automatically handles auction expiration and winner determination based on the highest bid. Through this project, I gained hands-on experience with JWT authentication, MongoDB data modeling, RESTful API development, auction logic implementation, protected routes, and backend scheduling for automatic auction closure. The project strengthened my understanding of scalable backend architecture, state management, and building marketplace-based applications with real-world business logic.",
-            src: "/auction.jpg",
+            src: "/image.png",
             // liveLink: "https://gossip-nine.vercel.app/login" ,
             uin: "auction",
             github: "https://github.com/sairash00/AuctionMarketplace"
