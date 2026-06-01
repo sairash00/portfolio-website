@@ -67,13 +67,13 @@ const Projects = () => {
             uin: "food",
             github: "https://github.com/sairash00/Chat-Application"
         },
-        {
-            name: "Food Delivery App",
-            description: "The Food Delivery & Restaurant Management App, built on the MERN stack, leverages TypeScript and React to deliver a robust and scalable solution for restaurant management and food delivery. Tailwind CSS and Daisy UI provide a sleek, responsive design, while Cloudinary handles image optimization. The app features a comprehensive admin panel, secure authentication, and seamless order management. Deployed on Vercel, it ensures high performance and reliability, making it an ideal choice for modern restaurant operations.",
-            src: "/foodApp.png",
-            liveLink: "https://food-delivery-app-frontend-teal.vercel.app" ,
-            uin: "food",
-            github: "https://github.com/sairash00/foodDeliveryApp"
+          {
+            name: "Auction Marketplace",
+            description: "This project is a full-stack Auction Marketplace built with the MERN stack, featuring secure user authentication, product listings, and a dynamic bidding system. Users can sell products at fixed prices or create timed auctions where buyers compete through real-time bidding. The platform automatically handles auction expiration and winner determination based on the highest bid. Through this project, I gained hands-on experience with JWT authentication, MongoDB data modeling, RESTful API development, auction logic implementation, protected routes, and backend scheduling for automatic auction closure. The project strengthened my understanding of scalable backend architecture, state management, and building marketplace-based applications with real-world business logic.",
+            src: "/auction.jpg",
+            // liveLink: "https://gossip-nine.vercel.app/login" ,
+            uin: "auction",
+            github: "https://github.com/sairash00/AuctionMarketplace"
         },
         {
             name: "Blogging Website",
@@ -83,21 +83,14 @@ const Projects = () => {
             liveLink: "https://blogging-website-frontend-swart.vercel.app/feeds/all",
             github: "https://github.com/sairash00/Blogging-website"
         },
-        {
-            name: "Ecommerce Website",
-            description: "A comprehensive e-commerce platform developed using React and Node.js. This project includes features such as user authentication, product listings, shopping cart functionality and order management. It highlights my ability to create secure, efficient, and user-centric web applications.",
-            src: "/ecommerce.jpg",
-            uin: "ecommerce",
-            liveLink: "https://ecommerce-frontend-sigma-nine.vercel.app" ,
-            github: "https://github.com/sairash00/"
-        },
-        // {
-        //     name: "Weather Application",
-        //     description: "A sleek and user-friendly weather application built with React. This app fetches real-time weather data from a third-party API, allowing users to search for and view current weather conditions and forecasts for different locations. It showcases my ability to integrate APIs and create responsive, interactive user interfaces.",
-        //     src: "/weather.jpg",
-        //     uin: "weather",
-        //     github: "https://github.com/sairash00/weather-app"
-        // }
+         {
+            name: "Food Delivery App",
+            description: "The Food Delivery & Restaurant Management App, built on the MERN stack, leverages TypeScript and React to deliver a robust and scalable solution for restaurant management and food delivery. Tailwind CSS and Daisy UI provide a sleek, responsive design, while Cloudinary handles image optimization. The app features a comprehensive admin panel, secure authentication, and seamless order management. Deployed on Vercel, it ensures high performance and reliability, making it an ideal choice for modern restaurant operations.",
+            src: "/foodApp.png",
+            liveLink: "https://food-delivery-app-frontend-teal.vercel.app" ,
+            uin: "food",
+            github: "https://github.com/sairash00/foodDeliveryApp"
+        }
     ];
 
     return (
